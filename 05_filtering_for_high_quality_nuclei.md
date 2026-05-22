@@ -21,7 +21,7 @@ We used the R package Seurat to filter for high-quality nuclei. First, to be abl
     m1 <- SCTransform(m1,vars.to.regress = c("percent.mt","percent.ribo","intronic.read.fraction"),
       variable.features.n = 10000)
 
-Further, after ([Germain, Sonrel, and Robinson 2020](references.md#ref-germain2020pipecomp)), we filtered out nuclei that were at least two median absolute deviations (MADs) away from the median of at least two of the following nuclei statitistics:
+Further, after ([Germain, Sonrel, and Robinson 2020]), we filtered out nuclei that were at least two median absolute deviations (MADs) away from the median of at least two of the following nuclei statitistics:
 
 - log10 of total UMI count
 
@@ -35,8 +35,11 @@ Further, after ([Germain, Sonrel, and Robinson 2020](references.md#ref-germain20
 
 - percent ribosomal UMIs
 
+```
     m1[["nFeaturePernCount"]] <- m1$nFeature_RNA/m1$nCount_RNA
     m1$nFeaturePernCount[is.na(m1$nFeaturePernCount)] <- 1
     top20Expr <- names(head(sort(rowSums(m1[["SCT"]]$data),decreasing = T),n=20))
+```
     m1$percent.top20 <- PercentageFeatureSet(m1,features = top20Expr)
     m1$percent.top20[is.na(m1$percent.top20)] <- 100
+`
