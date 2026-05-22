@@ -1,1 +1,1 @@
-This repository lists the code used for the analyses in the study "Single-nucleus transcriptomics and phosphoproteomics identify misregulated sperm components in mice carrying a selfish supergene" by Kelemen *et al.*
+This repository lists the code used for the analyses in the multi-omics study "Single-nucleus transcriptomics and phosphoproteomics identify misregulated sperm components in mice carrying a selfish supergene" by Kelemen *et al.*
