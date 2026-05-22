@@ -1,6 +1,7 @@
 # Assembling a *t*-spermatid transcriptome and a +/+ testis transcriptome
 
-![Pipeline of assembling a t-spermatid and a +/+ testis transcriptome](assets/figure_1_pipeline.png)
+<img width="704" height="929" alt="image" src="https://github.com/user-attachments/assets/b100201f-00cf-427d-a5cb-62041a48c308" />
+
 
 *Figure 1. Pipeline of assembling a t-spermatid and a +/+ testis transcriptome*
 
