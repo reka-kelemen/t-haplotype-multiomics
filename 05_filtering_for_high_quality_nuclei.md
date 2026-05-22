@@ -21,7 +21,7 @@ We used the R package Seurat to filter for high-quality nuclei. First, to be abl
     m1 <- SCTransform(m1,vars.to.regress = c("percent.mt","percent.ribo","intronic.read.fraction"),
       variable.features.n = 10000)
 
-Further, after (Germain, Sonrel, and Robinson 2020), we filtered out nuclei that were at least two median absolute deviations (MADs) away from the median of at least two of the following nuclei statitistics:
+Further, after [Germain, Sonrel, and Robinson 2020], we filtered out nuclei that were at least two median absolute deviations (MADs) away from the median of at least two of the following nuclei statitistics:
 
 - log10 of total UMI count
 
