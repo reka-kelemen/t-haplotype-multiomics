@@ -1,6 +1,6 @@
 # Coding sequence evolution of dyneins in the *t* complex
 
-We predicted dynein coding sequences on the *t*-haplotype sequence of ([Swanepoel et al. 2025](references.md#ref-swanepoel2025acquisition)):
+We predicted dynein coding sequences on the *t*-haplotype sequence of [Swanepoel et al. 2025]:
 
     miniprot -t100 -d tw5.mpi tw5_proximal45Mbs.fa #index
     miniprot -t100 --gff tw5.mpi Mus_musculus.GRCm39.pep.all.plusSmokTcrt-Ppp1cb.fa > tw5.gff
