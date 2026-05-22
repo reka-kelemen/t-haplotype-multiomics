@@ -18,7 +18,7 @@ To create a *t*-spermatid assembly, we extracted reads with barcodes that we inf
 
 ## Trimming reads
 
-We trimmed the 5’ [template switch oligo](https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/algorithms/overview#read-trimming) sequence from the second reads, the polyT tails from the 5’ ends of the first reads, and performed quality trimming for both reads with FQTrim (version 0.9.7).
+We trimmed the 5’ template switch oligo sequence from the second reads, the polyT tails from the 5’ ends of the first reads, and performed quality trimming for both reads with FQTrim (version 0.9.7).
 
     fqtrim -o trimmed.fq -5 AAGCAGTGGTATCAACGCAGAGTACATGGG -a 10 -q 10 223616_t-spermatids_1.fastq 
     223616_t-spermatids_2.fastq
