@@ -1,6 +1,6 @@
 # Testing for differential protein abundance
 
-We predicted protein sequences from a published *t*-haplotype sequence ([Swanepoel et al. 2025](references.md#ref-swanepoel2025acquisition)):
+We predicted protein sequences from a published *t*-haplotype sequence [Swanepoel et al. 2025]:
 
     samtools faidx tw5.fasta chr_tw5:1-45000000 > tw5_proximal45Mbs.fa
     miniprot -t100 -d tw5.mpi tw5_proximal45Mbs.fa #index
