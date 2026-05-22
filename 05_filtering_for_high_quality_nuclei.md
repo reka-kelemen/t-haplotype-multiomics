@@ -1,6 +1,6 @@
 # Filtering for high-quality nuclei
 
-We used the R package Seurat to filter for high-quality nuclei. First, to be able to compare to an external guide dataset when looking for artefact clusters, we filtered for genes present in the single nucleus RNA-seq dataset from ([Murat et al. 2023](references.md#ref-murat2023molecular)). To remove the effect of the *t*-haplotype in identifying cell types, we removed genes between 3-42 Mbs on chromosome 17. We filtered for nuclei that have their percent of mitochondrial UMIs below 5 percent, and their intronic read fractions above 40 percent.
+We used the R package Seurat to filter for high-quality nuclei. First, to be able to compare to an external guide dataset when looking for artefact clusters, we filtered for genes present in the single nucleus RNA-seq dataset from [Murat et al. 2023]. To remove the effect of the *t*-haplotype in identifying cell types, we removed genes between 3-42 Mbs on chromosome 17. We filtered for nuclei that have their percent of mitochondrial UMIs below 5 percent, and their intronic read fractions above 40 percent.
 
     m1.data <-  Read10X_h5("223616_output_3_filtered.h5", use.names = TRUE)
     m1.data <- m1.data[rownames(m1.data)%in%muratgenes,]
